@@ -1,0 +1,1210 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*reset CSS*/
+.header
+{
+	width: 1920px;
+	height: 1080px;
+/*	background:#A8CDED;*/
+	position: relative;
+	scroll-behavior: smooth;
+}
+.header video
+{
+	width: 1920px;
+	height: 1080px;
+	object-fit: cover;
+	position: absolute;
+	z-index: 10;
+}
+.header-background
+{
+	width: 1920px;
+	height: 1080px;
+	background:rgba(248,248,248,0.70);
+	position: absolute;
+	z-index: 100;
+}
+.header-menu
+{
+	width: 100px;
+	height: 1080px;
+	position: fixed;
+	z-index: 2006;
+	right: 0;
+/*	background: #9C4A4B;*/
+}
+.mainmenu
+{
+	width: 200px;
+	height: 400px;
+/*	background:#224C82;*/
+	margin: 50px -100px
+}
+.mainmenu ul
+{
+	list-style: none;
+}
+.mainmenu ul li i
+{
+	font-size: 40px;
+	color: white;
+	transform: all 0.5s;
+}
+.mainmenu ul li i:hover 
+{
+	color: black;
+	transition: all 0.5s
+}
+.mainmenu ul li 
+{
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.mainmenu ul li a
+{
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color:black;
+	font-family: myFirstFont;
+}
+.mainmenu .sub-menu li:hover 
+{
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+	transition-duration: 0.5s;
+}
+.mainmenu .sub-menu
+{
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	
+}
+.mainmenu ul li:hover .sub-menu
+{
+	visibility: visible;
+	transition-duration: 0.5s;
+	top: 150px;
+	}
+.logo
+{
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	z-index: 2000;
+	margin: 30px 30px;
+}
+.logo img
+{
+	width: 150px;
+	height: 150px;
+}
+.social-logo
+{
+	width: 200px;
+	height: 40px;
+	position: fixed;
+	z-index: 2007;
+/*	background: #230505;*/
+/*	color:black;*/
+	right: 0px;
+	bottom: 20px
+}
+.social-logo i
+{
+	font-size: 35px;
+	text-align: left;
+	letter-spacing: 15px;
+}
+.social-logo a i
+{
+	color: white;
+	transition: all 0.5s;
+}
+.social-logo a i:hover
+{
+	color: black;
+	transition: all 0.5s;
+}
+.khungvien
+{
+	width: 1174px;
+	height: 1080px;
+	z-index: 999;
+/*background: #BC6263;*/
+margin: 0 auto;
+	position: absolute;
+	left: 200px;
+	right: 200px;
+}
+.banner
+{
+	width: 800px;
+	height: 600px;
+	margin: 250px -230px;
+}
+.banner img
+{
+	width: 800px;
+	height: 600px;
+	animation-name: canhbay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+.anh-1
+{
+	width: 800px;
+	height: 500px;
+	margin: -500px -300px 0;
+}
+.anh-1 img
+{
+	width: 800px;
+	height: 500px;
+	animation-name: canhbay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+.anh-2
+{
+	width: 600px;
+	height: 350px;
+	margin: -650px 0 0 -200px;
+}
+.anh-2 img
+{
+	width: 600px;
+	height: 350px;
+	animation-name: canhbay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+@keyframes canhbay{
+	0%{
+		transform: translateX(-100px)
+	}
+	100%{
+		transform: translateY(50px)
+	}
+}
+.content
+{
+	width: 800px;
+	height: 600px;
+/*background: #370E82;*/
+	margin: -600px 800px 0;
+	text-align: center;
+}
+.content p
+{
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	word-spacing: 10px;
+	text-align: center;
+	font-family: myFirstFont;
+	color:black;
+
+}
+.content h1
+{
+	font-size: 110px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	word-spacing: 5px;
+	text-align: center;
+	font-family: myFirstFont;
+	line-height: 140px;
+	animation-name: doimauchu;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+h1 {
+  color:black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black ;
+}
+@keyframes doimauchu{
+	0%{
+		-webkit-text-stroke-color: white;
+	}
+	50%{
+		-webkit-text-stroke-color: black;
+	}
+	50%{
+		-webkit-text-stroke-color: white;
+	}
+}
+.content p1
+{
+	color: white;
+	font-family: mySecondFont;
+	font-size: 25px;
+	letter-spacing: 0.6px;
+	text-align: justify;
+	line-height: 40px;
+	font-weight: bold;
+	transition: all 0.5s;
+	word-spacing: 9px;
+}
+.content p1:hover
+{
+	color: black;
+	transition: all 0.5s;
+}
+.selection-1
+{
+	width: 1920px;
+	height: 1080px;
+background: #DDD6F3;
+	position: relative;
+}
+.mayphieubong
+{
+	width: 1200px;
+	height: 800px;
+	position: absolute;
+	z-index: 1003;
+/*	background: #B58687;*/
+	top: 600px;
+	left: -250px;
+	overflow: hidden;
+}
+.mayphieubong img
+{
+	width: 1200px;
+	height: 800px;
+}
+.mayphieubong-1
+{
+	width: 1300px;
+	height: 800px;
+	position: absolute;
+	z-index: 1002;
+/*background: #B58687;*/
+	top: 800px;
+	right: 30px;
+	opacity: 0.8
+}
+.mayphieubong-1 img
+{
+	width: 1300px;
+	height: 800px;
+}
+@keyframes mayphieubong{
+	from{transform: translateX(20px)
+		
+	}
+	to{
+		transform: translateX(-20px)
+	}
+}
+.khungvien-1
+{
+	width: 1174px;
+	height: 810px;
+/*background: black;*/
+float: right;
+	margin: 135px 0;
+	position: relative;
+	
+}
+.khungvien-1 img
+{
+	width: 1174px;
+	height: 810px;
+}
+.anhsl1
+{
+	width: 400px;
+	height: 600px;
+	position: absolute;
+	z-index: 100;
+/*	background: #933537;*/
+	top: 90px;
+	right: 400px;
+	
+}
+.anhsl1 img
+{
+	width: 400px;
+	height: 600px;
+}
+.anhsl1-1
+{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	z-index: 200;
+top: -200px;
+	right: 10px;
+
+}
+.anhsl1-1 img
+{
+	width: 400px;
+	height: 400px;
+}
+.content-1
+{
+	width: 700px;
+	height: 810px;
+/*background: #AA5253;*/
+	float: left;
+	margin: 135px 0 0px 0px;
+	position: absolute;
+
+}
+.textbox
+{
+	width: 700px;
+	height: 310px;
+/*	background: #82147F;*/
+	float: left;
+}
+.textbox p
+{
+	font-family: mySecondFont;
+	font-size: 25px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+	line-height: 50px;
+}
+.textbox h3
+{
+	font-family: myFirstFont;
+	font-size: 40px;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	color: black;
+	font-weight: bold;
+	text-align: right;
+	line-height: 0px;
+	 color:black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black ;
+	animation-name: doimauchu;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+.textbox i
+{
+	font-size: 70px;
+	margin: 10px;
+	line-height: -50px
+}
+.textbox-1
+{
+	width: 250px;
+	height: 400px;
+/*	background: white;*/
+	float: right;
+	margin: 100px 0;
+	border-top: 5px dashed white;
+}
+.textbox-1 p
+{
+		font-family: mySecondFont;
+	font-size: 25px;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+	color: white;
+	font-weight: bold;
+	text-align: right;
+	line-height: 50px;
+}
+.o-1
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+	margin: 5px 0 0 175px;
+	opacity: 0.9;
+}
+.o-1 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-2
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+	margin: 15px 0 0 175px;
+	opacity: 0.9;
+}
+.o-2 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-3
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+	margin: 15px 0 0 175px;
+	opacity: 0.9;
+}
+.o-3 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-4
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+	margin: 15px 0 0 175px;
+	opacity: 0.9;
+}
+.o-4 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-5
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+float: left;
+	margin:  -316px 0 0 90px;
+	opacity: 0.9;
+	
+}
+.o-5 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-6
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+float: left;
+	margin:  -233px 0 0 90px;
+	opacity: 0.9;
+}
+.o-6 img
+{
+	width: 68px;
+	height: 68px;
+}
+.o-7
+{
+	width: 68px;
+	height: 68px;
+/*	background: #7B2728;*/
+float: left;
+	margin:  -150px 0 0 90px;
+	opacity: 0.9;
+}
+.o-7 img
+{
+	width: 68px;
+	height: 68px;
+}
+.mayphieubong-2
+{
+	width: 1000px;
+	height: 700px;
+/*	background: #392727;*/
+	position: absolute;
+	z-index: 998;
+	top: 550px;
+	left: -380px;
+	opacity: 0.9; 
+}
+.mayphieubong-2 img
+{
+	width: 1000px;
+	height: 700px;
+}
+.mayphieubong-3
+{
+	width: 1200px;
+	height: 800px;
+/*	background: #392727;*/
+	position: absolute;
+	z-index: 999;
+	top: 650px;
+	left: -300px;
+}
+.mayphieubong-3 img
+{
+	width: 1200px;
+	height: 800px;
+}
+.selection-2
+{
+	width: 1920px;
+	height: 1080px;
+background: #DDD6F3;
+	position: relative;
+}
+.khungvien-2
+{
+	width: 1174px;
+	height: 1080px;
+/*background: white;*/
+	margin: 0 auto;
+	position: relative;
+}
+.content-2{
+	width: 1174px;
+	height: 200px;
+/*	background: #B9494B;*/
+	margin: 50px 0 0 0;
+	position: absolute;
+	z-index: 1000;
+	
+}
+.content-2 h4
+{
+	font-family: myFirstFont;
+	font-size: 120px;
+	word-spacing: 10px;
+	letter-spacing: 10px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	line-height: 120px;
+	 color:black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black ;
+}
+.sketch
+{
+	width: 400px;
+	height: 600px;
+/*	background: black;*/
+	position: absolute;
+	z-index: 10001;
+	top: 350px;
+}
+.sketch img
+{
+	width: 400px;
+	height: 600px;
+	position:absolute;
+  left:0;
+	  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+ @keyframes FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.sketch img.center {
+  animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+.tklogo
+{
+	width: 400px;
+	height: 600px;
+/*	background: red;*/
+	position: absolute;
+	z-index: 10001;
+	top: 350px;
+	left: 420px;
+}
+.tklogo img
+{
+	width: 400px;
+	height: 600px;
+	position:absolute;
+  left:0;
+	  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+ @keyframes FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.tklogo img.biet {
+  animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+.poster
+{
+	width: 335px;
+	height: 600px;
+/*	background: blue;*/
+	position: absolute;
+	z-index: 10001;
+	top: 350px;
+	right: 0;
+}
+.poster img
+{
+	width: 335px;
+	height: 600px;
+	position:absolute;
+  left:0;
+	  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+ @keyframes FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.poster img.hj {
+  animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+.button-02
+{
+	width: 200px;
+	height: 70px;
+/*	background:black;*/
+	position: absolute;
+	z-index: 10001;
+	bottom:30px;
+	right: 64px;
+	border-radius: 40px;
+}
+.button-01
+{
+	width: 200px;
+	height: 70px;
+/*	background: black;*/
+	position: absolute;
+	z-index: 10001;
+	bottom:30px;
+	left: 100px;
+	border-radius: 40px;
+}
+.button-03
+{
+	width: 200px;
+	height: 70px;
+/*	background: black;*/
+	position: absolute;
+	z-index: 10001;
+	bottom:30px;
+	left: 525px;
+	border-radius: 40px;
+}
+h5
+{
+	font-family: myFirstFont;
+	color: black;
+	font-size: 30px;
+text-align: center;
+line-height: 70px;
+	letter-spacing: 2px;
+}
+.button-01 a
+{
+	text-decoration: none;
+}
+.button-01:hover
+{
+	border: 2px dashed black;
+}
+.button-02 a
+{
+	text-decoration: none;
+}
+.button-02:hover 
+{
+	border: 2px dashed black;
+	color: black;
+}
+.button-03 a
+{
+	text-decoration: none;
+}
+.button-03:hover 
+{
+	border: 2px dashed black;
+	color: black;
+}
+.mayphieubong-4
+{
+	width: 1200px;
+	height: 800px;
+/*	background: #392727;*/
+	position: absolute;
+	z-index: 999;
+	top: 600px;
+	left:700px;
+}
+.mayphieubong-4 img
+{
+	width: 1200px;
+	height: 800px;
+}
+.mayphieubong-5
+{
+	width: 1200px;
+	height: 800px;
+/*	background: #392727;*/
+	position: absolute;
+	z-index: 999;
+	top: 600px;
+	left:100px;
+}
+.mayphieubong-5 img
+{
+	width: 1200px;
+	height: 800px;
+}
+.selection-3
+{
+	width: 1920px;
+	height: 1080px;
+background: #DDD6F3;
+	position: relative;
+}
+.mayphieubong-6
+{
+	width: 1200px;
+	height: 800px;
+	position: absolute;
+	z-index: 900;
+	left: -250px;
+	top:800px;
+}
+.mayphieubong-6 img
+{
+	width: 1200px;
+	height: 800px;
+	animation-name: maybay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+.mayphieubong-7
+{
+	width: 1000px;
+	height: 600px;
+	position: absolute;
+	z-index: 901;
+	left: 700px;
+	top:780px;
+}
+.mayphieubong-7 img
+{
+	width: 1000px;
+	height: 600px;
+	animation-name: maybay;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+@keyframes maybay{
+	from{
+		transform: translateX(40px);
+	}
+	to{
+		transform: translateX(-40px)
+	}
+}
+.khungvien-3
+{
+	width: 1174px;
+	height: 1080px;
+/*background: white;*/
+	margin: 0 auto;
+	position: relative;
+}
+.content-3
+{
+	width: 700px;
+	height: 400px;
+	position: absolute;
+	z-index: 100;
+/*	background: rgba(187,109,110,1.00);*/
+	top:60px;
+}
+.content-3 img
+{
+	width: 700px;
+	height: 400px;
+}
+.content-4
+{
+	width: 450px;
+	height: 400px;
+	position: absolute;
+	z-index: 100;
+/*	background: rgba(187,109,110,1.00);*/
+	top:60px;
+	right:0;
+}
+.content-4 img
+{
+	width: 450px;
+	height: 400px;
+}
+.content-5
+{
+	width: 317px;
+	height: 550px;
+	position: absolute;
+	z-index: 100;
+/*	background:blue;*/
+	top:485px;
+	left:0;
+}
+.content-5 img
+{
+	width: 317px;
+	height: 550px;
+}
+.content-6
+{
+	width: 450px;
+	height: 550px;
+	position: absolute;
+	z-index: 100;
+/*	background:red;*/
+	top:0px;
+	left: 345px;
+}
+.content-6 img
+{
+	width: 450px;
+	height: 550px;
+}
+.content-7
+{
+	width: 350px;
+	height: 550px;
+	position: absolute;
+	z-index: 100;
+/*	background:green;*/
+	top:0px;
+	left: 825px;
+}
+.content-7 img
+{
+	width: 350px;
+	height: 550px;
+}
+.selection-4
+{
+	width: 1920px;
+	height: 1080px;
+background: #DDD6F3;
+	position: relative;
+}
+.khungvien-4
+{
+	width: 1174px;
+	height: 810px;
+/*background: white;*/
+	margin: 135px 0;
+	float: left;
+	position: absolute;
+}
+.khungvien-4 img
+{
+	width: 1174px;
+	height: 810px;
+	position:absolute;
+  left:0;
+	  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+ @keyframes FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.khungvien-4 img.he {
+  animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+.content-8
+{
+	width: 660px;
+	height: 810px;
+/*background: #AA5253;*/
+margin: 135px 40px;
+	float: right;
+}
+h6{
+	font-family: myFirstFont;
+	font-size: 98px;
+	text-align:left;
+	line-height: 160px;
+	color:black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black ;
+}
+.content-8 p
+{
+	font-family: mySecondFont;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	word-spacing: 10px;
+	text-align: left;
+	line-height: 39px;
+	transition: all 0.5s;
+}
+.content-8 p:hover
+{
+	color: black;
+	transition: all 0.5s;
+}
+.anhcontent
+{
+	width: 660px;
+	height: 420px;
+	background: rgba(193,63,66,1.00);
+	overflow: hidden;
+}
+.anhcontent img
+{
+	width: 660px;
+	height: 420px;
+	transition: all 0.5s;
+}
+.anhcontent img:hover
+{
+	transform: scale(1.5);
+	transition: all 0.5s;
+}
+.mayphieubong-8
+{
+	width: 1300px;
+	height: 800px;
+	position: absolute;
+	top:600px;
+	z-index: 990;
+	left: 100px;
+}
+.mayphieubong-8 img
+{
+	width: 1300px;
+	height: 800px;
+}
+.selection-5
+{
+	width: 1920px;
+	height: 1080px;
+background: #A9C9FF;
+	position: relative;
+}
+.selection-5 video
+{
+	width: 1920px;
+	height: 1080px;
+	object-fit: cover;
+	position: absolute;
+	z-index: 10;
+}
+.video-background
+{
+	width: 1920px;
+	height: 1080px;
+	background:rgba(248,248,248,0.70);
+	position: absolute;
+	z-index: 100;
+}
+.khungvien-5
+{
+	width: 1174px;
+	height: 1080px;
+/*	background: white;*/
+	position: absolute;
+	z-index: 800;
+	left: 400px;
+}
+.callme
+{
+	width: 400px;
+	height: 700px;
+/*	background: red;*/
+	margin: 200px 0;
+	float: left;
+	text-align: center;
+}
+.callme i
+{
+	color: black;
+	font-size: 60px;
+}
+.callme p
+{
+	color: black;
+	font-size: 25px;
+	font-family: mySecondFont;
+	font-weight: bold;
+	
+}
+h7
+{
+	color: black;
+	font-family: myFirstFont;
+	font-size: 62px;
+	letter-spacing: 2px;
+	line-height: 80px;
+	 -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black ;
+	animation-name: doimauchu;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-direction: alternate;
+}
+form
+{
+	width: 740px;
+	height: 700px;
+/*	background: rgba(125,60,61,1.00);*/
+	float: right;
+	margin: 200px 0;
+}
+form p
+{
+	font-family: mySecondFont;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 140px;
+	letter-spacing: 10px;
+}
+input
+{
+	width: 300px;
+	height: 40px;
+	outline: none;
+	font-size: 25px;
+	font-family: mySecondFont;
+	letter-spacing: 2px;
+}
+textarea
+{
+	width: 740px;
+	outline: none;
+	font-size: 20px;
+	font-family: mySecondFont;
+}
+button
+{
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	font-family: mySecondFont;
+	text-align: center;
+	line-height: 20px;
+}
+.bottom-footer
+{
+	width: 1920px;
+	height: 80px;
+	background:#DDD6F3;
+}
+.contentfooter
+{
+	width: 1174px;
+	height: 80px;
+	margin: 0 auto;
+/*	background: white;*/
+}
+.contentfooter p
+{
+	color: white;
+	font-family: mySecondFont;
+	font-size: 18px;
+	text-align: center;
+	line-height: 80px;
+	letter-spacing: 5px;
+}
